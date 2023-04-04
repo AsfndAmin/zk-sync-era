@@ -1,0 +1,11 @@
+ yarn init -y
+ yarn add -D typescript ts-node @types/node ethers@^5.7.2 zksync-web3 @ethersproject/hash @ethersproject/web hardhat @matterlabs/hardhat-zksync-solc @matterlabs/hardhat-zksync-deploy
+ yarn hardhat compile  
+ yarn hardhat deploy-zksync      
+ yarn add -D @matterlabs/hardhat-zksync-verify @nomiclabs/hardhat-etherscan 
+yarn hardhat verify --network zkTestnet  0x4c2aa0e4580d07511A3939e6d14e6caa6079cb53 "Hi there!"
+
+
+important links
+verify = https://era.zksync.io/docs/api/hardhat/hardhat-zksync-verify.html
+setup =  https://era.zksync.io/docs/api/hardhat/getting-started.html#configuration
